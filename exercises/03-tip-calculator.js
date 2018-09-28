@@ -10,6 +10,18 @@
 // tipAmount(100, 'good') --> 20
 // tipAmount(40, 'fair') --> 6
 
+function tipAmount (billAmount, service) {
+switch(service) {
+    case 'good' : return billAmount * 0.2; 
+    break; 
+    case 'fair' : return billAmount * 0.15; 
+    break;
+    case 'poor' : return billAmount * 0.1;
+    default : return("I can't Captain");
+}
+
+}
+
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -21,6 +33,9 @@
 // totalAmount(100, 'good') --> 120
 // totalAmount(40, 'fair') --> 46
 
+function totalAmount (billAmount, service) {
+    return (billAmount + tipAmount(billAmount, service));
+}
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -31,3 +46,7 @@
 // Examples:
 // splitAmount(100, 'good', 5) --> 24
 // splitAmount(40, 'fair', 2) --> 23
+
+function splitAmount (billAmount, service, people) {
+return ((billAmount + tipAmount(billAmount, service)) / people);
+}

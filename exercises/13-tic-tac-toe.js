@@ -23,3 +23,8 @@
 //   [null, 'X', 'X']
 //   ])
 // null
+
+const emptyBoard = [
+    [null, null, null],
+    
+]

@@ -7,7 +7,9 @@
 // *****
 // *****
 // *****
+function makeSquare (size) {
 
+}
 
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -20,7 +22,9 @@
 // *    *
 // ******
 
+function makeBox (width, height) {
 
+}
 
 // ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 // Write a function "makeBanner" which is given some text and returns a banner
@@ -31,3 +35,6 @@
 // ****************************
 // * Welcome to DigitalCrafts *
 // ****************************
+function makeBanner (text) {
+    
+}
