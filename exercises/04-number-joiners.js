@@ -43,20 +43,21 @@ function numberJoinerFancy (startNum, endNum, seperator) {
     let theString = ''
     for (var i = startNum; i <= endNum; i++) {
        if(seperator = '') {
-           return theString += i = '_'
+            theString += i + '_';
        } 
        else if (seperator = '~') {
-        return theString += i + seperator
+         theString += i  + seperator;
        }
        else if (seperator = '***BANANAS***') {
-           return theString += i + '***BANANAS***'
-       }
+            theString += i + seperator;
+        }
        else {
-           return "it ain't happening....haha"
+            "it ain't happening....haha"
        }
-    }
-    
     var len = theString.length
     theString = theString.substring(0, len - 1)
     return theString
+    }
 }
+console.log(numberJoinerFancy(1,10,'~'))
+

@@ -8,3 +8,7 @@
 // 'Cheeeeese'
 // > longLongVowels('Man')
 // 'Man'
+
+function longLongVowels (string) {
+
+}

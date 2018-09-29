@@ -6,3 +6,33 @@
 // rockPaperScissors('rock', 'scissors') --> 'player 1'
 // rockPaperScissors('rock', 'paper') --> 'player 2'
 // rockPaperScissors('paper', 'paper') --> 'draw'
+function rockPaperScissors (player1Throw, player2Throw) {
+    if (player1Throw===player2Throw) {
+        return "draw";
+    } 
+    if (player1Throw === 'rock') {
+        if(player2Throw==='scissors'){
+            return 'player 1';
+        }
+        else{
+            return 'player 2';
+        }
+    }
+    if (player1Throw === 'paper'){
+        if(player2Throw==='rock'){
+            return 'player 1';
+        }
+        else {
+            return 'player 2';
+        }
+    }
+    if (player1Throw==='scissors'){
+        if(player2Throw==='paper'){
+            return 'player 1';
+        }
+        else {
+            return 'player 2';
+        }
+    }  
+    
+}

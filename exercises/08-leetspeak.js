@@ -11,3 +11,7 @@
 //
 // Example:
 // leetspeak('Leet') --> "l337"
+
+function leetspeak (string) {
+
+}
